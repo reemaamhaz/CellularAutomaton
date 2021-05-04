@@ -21,8 +21,8 @@
 int check_neighbors(int *current, int a, int b, int dimension)
 {
     // calculate how many alive neighbors there are
-    int alive = 0;
-    int cell = current[a * dimension + b];
+    	int alive = 0;
+    	int cell = current[a * dimension + b];
 	int left = current[a * dimension +((b-1+dimension)%dimension)]; //left cell
 	int right = current[a * dimension +((b+1+dimension)%dimension)]; //right cell
 	int top = current[(((a - 1 + dimension)%dimension)* dimension)+ b]; // top of cell
